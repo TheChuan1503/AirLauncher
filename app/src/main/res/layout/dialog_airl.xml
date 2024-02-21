@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="bottom">
+
+		<ScrollView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1.0">
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:paddingLeft="24dp"
+				android:paddingRight="24dp"
+				android:paddingTop="16dp"
+				android:paddingBottom="0dp">
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="center">
+
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:text="列数"
+						android:layout_weight="1.0"
+						android:id="@+id/列数Label"/>
+
+					<SeekBar
+						android:layout_width="192dp"
+						android:layout_height="wrap_content"
+						android:max="9"
+						android:min="0"
+						android:id="@+id/列数"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:paddingTop="6dp">
+
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:text="字体大小"
+						android:layout_weight="1.0"/>
+
+					<SeekBar
+						android:layout_width="192dp"
+						android:layout_height="wrap_content"
+						android:max="13"
+						android:min="0"
+						android:id="@+id/字体大小"/>
+
+				</LinearLayout>
+
+				<Button
+					android:layout_width="match_parent"
+					style="?android:attr/buttonBarButtonStyle"
+					android:layout_height="wrap_content"
+					android:text="关于"
+                    android:id="@+id/关于"/>
+
+			</LinearLayout>
+
+		</ScrollView>
+
+	</LinearLayout>
+
+</LinearLayout>
+
